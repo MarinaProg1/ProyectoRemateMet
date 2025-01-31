@@ -1,0 +1,65 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Aa]ssets/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Publish output
+publish/
+*.publish.xml
+
+# MAUI
+**/bin/
+**/obj/
+**/platforms/
+**/resources/
+**/styles/
+**/wwwroot/
+
+# User-specific files
+*.dbmdl
+*.dbproj.schemaview
+*.dbproj.user
+*.jfm
+*.jrs
+
+# Other
+*.pdb
+*.mdb
+*.cache
+*.ilk
+*.sdf
+*.db
+*.exe
+*.dll
+*.pdb
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Ignore files for all platforms
+*.apk
+*.ipa
+
