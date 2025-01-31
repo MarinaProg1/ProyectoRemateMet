@@ -17,7 +17,6 @@
 *.nupkg
 *.snupkg
 **/packages/*
-!**/packages/build/
 
 # Visual Studio Code
 .vscode/
@@ -63,15 +62,4 @@ publish/
 # Ignore files for all platforms
 *.apk
 *.ipa
-
-# Ignore folders for all platforms
-*.vs/
-*.user/
-*.suo/
-*.ncb/
-*.sdf/
-*.opensdf/
-*.sln.ide/
-*.sln.xcuserdat/
-
 
