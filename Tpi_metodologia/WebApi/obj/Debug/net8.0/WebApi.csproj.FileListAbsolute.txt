@@ -429,3 +429,4 @@ C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debu
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.pdb
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\ref\WebApi.dll
+C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json

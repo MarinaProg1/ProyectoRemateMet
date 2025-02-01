@@ -21,30 +21,92 @@ namespace WebApi.Controllers
             _context = context;
         }
 
+        //[HttpPost("publicar")]
+        //[Authorize]
+        //public async Task<IActionResult> PublicarProducto([FromBody] CrearProductoDto dto)
+        //{
+        //    if (dto == null) return BadRequest("Datos inválidos");
+
+        //    try
+        //    {
+        //        var usuario = await _context.Usuarios.FindAsync(dto.IdUsuario);
+        //        if (usuario == null) return NotFound("Usuario no encontrado");
+
+        //        var remate = await _context.Remates.FindAsync(dto.IdRemate);
+        //        if (remate == null) return NotFound("Remate no encontrado");
+        //        if (remate.Estado != "activo") return BadRequest("El remate no está activo");
+
+        //        var producto = new Producto
+        //        {
+        //            Titulo = dto.Titulo,
+        //            Descripcion = dto.Descripcion,
+        //            PrecioBase = dto.PrecioBase,
+        //            Imagenes = dto.Imagenes,
+        //            IdRemate = dto.IdRemate,
+        //            IdUsuario = dto.IdUsuario,
+        //            Estado = "Pendiente"
+        //        };
+
+        //        _context.Productos.Add(producto);
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok(new { mensaje = "Producto publicado y pendiente de aprobación", idProducto = producto.IdProducto });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, "Error interno del servidor: " + ex.Message);
+        //    }
+        //}
         [HttpPost("publicar")]
         [Authorize]
-        public async Task<IActionResult> PublicarProducto([FromBody] CrearProductoDto dto)
+        public async Task<IActionResult> PublicarProducto([FromForm] CrearProductoDto dto) // Usar [FromForm] para aceptar archivos
         {
             if (dto == null) return BadRequest("Datos inválidos");
 
             try
             {
+                // Verificar si el archivo de imagen es válido
+                if (dto.Imagen == null || dto.Imagen.Length == 0)
+                {
+                    return BadRequest("Debe proporcionar una imagen para el producto.");
+                }
+
+                // Generar un nombre único para la imagen
+                var fileName = Path.GetFileNameWithoutExtension(dto.Imagen.FileName);
+                var fileExtension = Path.GetExtension(dto.Imagen.FileName);
+                var newFileName = $"{Guid.NewGuid()}{fileExtension}";
+
+                // Ruta de almacenamiento (puedes ajustar esto según tus necesidades)
+                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
+
+                // Guardar la imagen en el servidor
+                var filePath = Path.Combine(uploadPath, newFileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await dto.Imagen.CopyToAsync(stream);
+                }
+
+                // Crear el producto
                 var usuario = await _context.Usuarios.FindAsync(dto.IdUsuario);
                 if (usuario == null) return NotFound("Usuario no encontrado");
 
                 var remate = await _context.Remates.FindAsync(dto.IdRemate);
                 if (remate == null) return NotFound("Remate no encontrado");
-                if (remate.Estado != "activo") return BadRequest("El remate no está activo");
+                if (remate.Estado != "abierto") return BadRequest("El remate no está activo");
 
                 var producto = new Producto
                 {
                     Titulo = dto.Titulo,
                     Descripcion = dto.Descripcion,
                     PrecioBase = dto.PrecioBase,
-                    Imagenes = dto.Imagenes,
+                    Imagenes = newFileName, // Guardar solo el nombre del archivo
                     IdRemate = dto.IdRemate,
                     IdUsuario = dto.IdUsuario,
-                    Estado = "Pendiente"
+                    Estado = "pendiente"
                 };
 
                 _context.Productos.Add(producto);
@@ -58,9 +120,8 @@ namespace WebApi.Controllers
             }
         }
 
-        
         [HttpGet("pendientes")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> ObtenerProductosPendientes()
         {
             try
@@ -76,16 +137,16 @@ namespace WebApi.Controllers
 
        
         [HttpPut("aprobar/{idProducto}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> AprobarProducto(int idProducto)
         {
             try
             {
                 var producto = await _context.Productos.FindAsync(idProducto);
                 if (producto == null) return NotFound("Producto no encontrado");
-                if (producto.Estado != "Pendiente") return BadRequest("El producto ya fue evaluado");
+                if (producto.Estado != "pendiente") return BadRequest("El producto ya fue evaluado");
 
-                producto.Estado = "Aprobado";
+                producto.Estado = "aprobado";
 
                 var remate = await _context.Remates.FirstOrDefaultAsync(r => r.Estado == "activo");
                 if (remate == null) return BadRequest("No hay remates activos para asociar el producto");

@@ -20,23 +20,70 @@ namespace WebApi.Controllers
             _context = context;
         }
 
+        //[HttpPost("ofertar/{idProducto}")]
+        //[Authorize]
+        //public async Task<IActionResult> RealizarOferta(int idProducto, [FromBody] OfertaDto dto)
+        //{
+        //    try
+        //    {
+        //        var producto = await _context.Productos.FindAsync(idProducto);
+        //        if (producto == null) return NotFound("Producto no encontrado");
+
+        //        if (dto.Monto <= producto.PrecioBase)
+        //            return BadRequest("El monto de la oferta debe ser mayor al precio base.");
+
+        //        var ofertaExistente = await _context.Ofertas
+        //            .FirstOrDefaultAsync(o => o.IdUsuario == dto.IdUsuario && o.IdProducto == idProducto);
+        //        if (ofertaExistente != null)
+        //            return BadRequest("Ya has realizado una oferta para este producto.");
+
+        //        var oferta = new Oferta
+        //        {
+        //            IdUsuario = dto.IdUsuario,
+        //            IdProducto = idProducto,
+        //            Monto = dto.Monto,
+        //            Fecha = DateTime.Now,
+        //            Estado = "Pendiente"
+        //        };
+
+        //        _context.Ofertas.Add(oferta);
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok(new { mensaje = "Oferta realizada exitosamente", idOferta = oferta.IdOferta });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, $"Error interno: {ex.Message}");
+        //    }
+        //}
+
         [HttpPost("ofertar/{idProducto}")]
         [Authorize]
         public async Task<IActionResult> RealizarOferta(int idProducto, [FromBody] OfertaDto dto)
         {
             try
             {
+                // Obtener el producto desde la base de datos
                 var producto = await _context.Productos.FindAsync(idProducto);
                 if (producto == null) return NotFound("Producto no encontrado");
 
+                // Verificar si el producto está aprobado
+                if (producto.Estado != "Aprobado")
+                {
+                    return BadRequest("El producto aún no está aprobado para recibir ofertas.");
+                }
+
+                // Verificar que el monto de la oferta sea mayor al precio base
                 if (dto.Monto <= producto.PrecioBase)
                     return BadRequest("El monto de la oferta debe ser mayor al precio base.");
 
+                // Verificar si ya se ha realizado una oferta para este producto por el mismo usuario
                 var ofertaExistente = await _context.Ofertas
                     .FirstOrDefaultAsync(o => o.IdUsuario == dto.IdUsuario && o.IdProducto == idProducto);
                 if (ofertaExistente != null)
                     return BadRequest("Ya has realizado una oferta para este producto.");
 
+                // Crear la nueva oferta
                 var oferta = new Oferta
                 {
                     IdUsuario = dto.IdUsuario,
@@ -46,6 +93,7 @@ namespace WebApi.Controllers
                     Estado = "Pendiente"
                 };
 
+                // Agregar la oferta a la base de datos
                 _context.Ofertas.Add(oferta);
                 await _context.SaveChangesAsync();
 
@@ -57,7 +105,7 @@ namespace WebApi.Controllers
             }
         }
 
-        
+
         [HttpGet("ofertas/{idProducto}")]
         [Authorize]
         public async Task<IActionResult> ObtenerOfertas(int idProducto)

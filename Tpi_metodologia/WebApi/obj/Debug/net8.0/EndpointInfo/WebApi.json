@@ -177,24 +177,53 @@
         ],
         "requestBody": {
           "content": {
-            "application/json-patch+json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/CrearProductoDto"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CrearProductoDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CrearProductoDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CrearProductoDto"
+                "type": "object",
+                "properties": {
+                  "Titulo": {
+                    "type": "string"
+                  },
+                  "Descripcion": {
+                    "type": "string"
+                  },
+                  "PrecioBase": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Imagen": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "IdRemate": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "IdUsuario": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "Titulo": {
+                  "style": "form"
+                },
+                "Descripcion": {
+                  "style": "form"
+                },
+                "PrecioBase": {
+                  "style": "form"
+                },
+                "Imagen": {
+                  "style": "form"
+                },
+                "IdRemate": {
+                  "style": "form"
+                },
+                "IdUsuario": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -366,36 +395,6 @@
   },
   "components": {
     "schemas": {
-      "CrearProductoDto": {
-        "type": "object",
-        "properties": {
-          "titulo": {
-            "type": "string",
-            "nullable": true
-          },
-          "descripcion": {
-            "type": "string",
-            "nullable": true
-          },
-          "precioBase": {
-            "type": "number",
-            "format": "double"
-          },
-          "imagenes": {
-            "type": "string",
-            "nullable": true
-          },
-          "idRemate": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "idUsuario": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "CrearRemateDto": {
         "type": "object",
         "properties": {

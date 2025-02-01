@@ -119,9 +119,34 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "WebApi.Models.DTOs.Producto.CrearProductoDto",
-        "IsRequired": true
+        "Name": "Titulo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PrecioBase",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagen",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdRemate",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

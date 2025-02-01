@@ -71,7 +71,7 @@ public class RematesController : ControllerBase
         try
         {
             var remates = await _context.Remates
-                .Where(r => r.Estado == "activo")
+                .Where(r => r.Estado == "abierto")
                 .Include(r => r.Productos)
                 .ToListAsync();
 
@@ -103,13 +103,13 @@ public class RematesController : ControllerBase
 
             foreach (var remate in remates)
             {
-                if (remate.Estado == "Preparación" && remate.FechaInicio <= ahora)
+                if (remate.Estado == "preparación" && remate.FechaInicio <= ahora)
                 {
-                    remate.Estado = "Activa";
+                    remate.Estado = "abierto";
                 }
-                else if (remate.Estado == "Activa" && remate.FechaCierre <= ahora)
+                else if (remate.Estado == "abierto" && remate.FechaCierre <= ahora)
                 {
-                    remate.Estado = "Finalizada";
+                    remate.Estado = "cerrado";
                 }
             }
 
@@ -135,7 +135,7 @@ public class RematesController : ControllerBase
             if (remate == null)
                 return NotFound("Remate no encontrado");
 
-            if (remate.Estado != "Finalizada")
+            if (remate.Estado != "cerrado")
                 return BadRequest("El remate debe estar en estado 'Finalizada' para seleccionar la oferta ganadora");
 
             bool hayGanadores = false;
@@ -143,7 +143,7 @@ public class RematesController : ControllerBase
             foreach (var producto in remate.Productos)
             {
                 var ofertas = await _context.Ofertas
-                    .Where(o => o.IdProducto == producto.IdProducto && o.Estado == "Pendiente")
+                    .Where(o => o.IdProducto == producto.IdProducto && o.Estado == "pendiente")
                     .OrderByDescending(o => o.Monto)
                     .ThenBy(o => o.Fecha)
                     .ToListAsync();
@@ -151,7 +151,7 @@ public class RematesController : ControllerBase
                 if (ofertas.Count > 0)
                 {
                     var ofertaGanadora = ofertas.First();
-                    ofertaGanadora.Estado = "Ganadora";
+                    ofertaGanadora.Estado = "ganadora";
                     _context.Ofertas.Update(ofertaGanadora);
                     hayGanadores = true;
                 }
