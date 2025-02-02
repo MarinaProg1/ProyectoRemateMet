@@ -330,21 +330,22 @@
         }
       }
     },
-    "/api/remates/calcular-ofertas-ganadoras/{idRemate}": {
-      "post": {
+    "/api/remates/todos": {
+      "get": {
         "tags": [
           "Remates"
         ],
-        "parameters": [
-          {
-            "name": "idRemate",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
+        "responses": {
+          "200": {
+            "description": "OK"
           }
+        }
+      }
+    },
+    "/api/remates/procesar-remates": {
+      "post": {
+        "tags": [
+          "Remates"
         ],
         "responses": {
           "200": {

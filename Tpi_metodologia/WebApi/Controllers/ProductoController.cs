@@ -148,7 +148,7 @@ namespace WebApi.Controllers
 
                 producto.Estado = "aprobado";
 
-                var remate = await _context.Remates.FirstOrDefaultAsync(r => r.Estado == "activo");
+                var remate = await _context.Remates.FirstOrDefaultAsync(r => r.Estado == "abierto");
                 if (remate == null) return BadRequest("No hay remates activos para asociar el producto");
 
                 producto.IdRemate = remate.IdRemate;

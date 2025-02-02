@@ -173,22 +173,6 @@
   },
   {
     "ContainingType": "WebApi.Controllers.RematesController",
-    "Method": "CalcularOfertasGanadoras",
-    "RelativePath": "api/remates/calcular-ofertas-ganadoras/{idRemate}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idRemate",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApi.Controllers.RematesController",
     "Method": "CrearRemate",
     "RelativePath": "api/remates/crear",
     "HttpMethod": "POST",
@@ -201,6 +185,26 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.RematesController",
+    "Method": "ProcesarRemates",
+    "RelativePath": "api/remates/procesar-remates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.RematesController",
+    "Method": "ObtenerTodosLosRemates",
+    "RelativePath": "api/remates/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

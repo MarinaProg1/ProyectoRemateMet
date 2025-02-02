@@ -10,6 +10,7 @@ using WebApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Agregar servicios al contenedor
 builder.Services.AddControllers()
     .AddNewtonsoftJson(options =>
@@ -77,6 +78,8 @@ builder.Services.AddAuthentication(config =>
         (Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]!))
     };
 });
+
+builder.Services.AddScoped<RemateService>();
 
 // Configurar CORS
 builder.Services.AddCors(options =>
