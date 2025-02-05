@@ -247,6 +247,29 @@
         }
       }
     },
+    "/api/Producto/por-remate/{idRemate}": {
+      "get": {
+        "tags": [
+          "Producto"
+        ],
+        "parameters": [
+          {
+            "name": "idRemate",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Producto/aprobar/{idProducto}": {
       "put": {
         "tags": [

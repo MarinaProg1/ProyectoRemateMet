@@ -142,53 +142,6 @@ public class RematesController : ControllerBase
         }
     }
 
-
-
-    //[HttpPost("calcular-ofertas-ganadoras/{idRemate}")]
-    //[Authorize(Roles = "admin")]
-    //public async Task<IActionResult> CalcularOfertasGanadoras(int idRemate)
-    //{
-    //    try
-    //    {
-    //        var remate = await _context.Remates
-    //            .Include(r => r.Productos)
-    //            .FirstOrDefaultAsync(r => r.IdRemate == idRemate);
-
-    //        if (remate == null)
-    //            return NotFound("Remate no encontrado");
-
-    //        if (remate.Estado != "cerrado")
-    //            return BadRequest("El remate debe estar en estado 'Finalizada' para seleccionar la oferta ganadora");
-
-    //        bool hayGanadores = false;
-
-    //        foreach (var producto in remate.Productos)
-    //        {
-    //            var ofertas = await _context.Ofertas
-    //                .Where(o => o.IdProducto == producto.IdProducto && o.Estado == "pendiente")
-    //                .OrderByDescending(o => o.Monto)
-    //                .ThenBy(o => o.Fecha)
-    //                .ToListAsync();
-
-    //            if (ofertas.Count > 0)
-    //            {
-    //                var ofertaGanadora = ofertas.First();
-    //                ofertaGanadora.Estado = "ganadora";
-    //                _context.Ofertas.Update(ofertaGanadora);
-    //                hayGanadores = true;
-    //            }
-    //        }
-
-    //        if (!hayGanadores) return NotFound("No se encontraron ofertas ganadoras");
-
-    //        await _context.SaveChangesAsync();
-    //        return Ok("Ofertas ganadoras calculadas y marcadas.");
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        return StatusCode(500, $"Error interno del servidor: {ex.Message}");
-    //    }
-    //}
     [HttpPost("procesar-remates")]
     [Authorize(Roles = "admin")]
     public async Task<IActionResult> ProcesarRemates()

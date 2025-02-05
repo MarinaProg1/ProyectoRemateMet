@@ -55,31 +55,21 @@ namespace WebApi.Controllers
             }
         }
 
+        
         [HttpPost]
         [Route("Login")]
-        [AllowAnonymous]
-        public async Task<IActionResult> Login([FromBody] LoginDTO objeto)
+        public async Task<IActionResult> Login(LoginDTO objeto)
         {
-            if (objeto == null)
-                return BadRequest("El objeto recibido es nulo.");
+            var usuarioEncontrado = await _dbPruebaContext.Usuarios
+                                                    .Where(u =>
+                                                        u.Email == objeto.Email &&
+                                                        u.Clave == _utilidades.encriptarSHA256(objeto.Clave)
+                                                      ).FirstOrDefaultAsync();
 
-            try
-            {
-                var usuarioEncontrado = await _dbPruebaContext.Usuarios
-                    .Where(u => u.Email == objeto.Email &&
-                                u.Clave == _utilidades.encriptarSHA256(objeto.Clave))
-                    .FirstOrDefaultAsync();
-
-                return Ok(new
-                {
-                    isSuccess = usuarioEncontrado != null,
-                    token = usuarioEncontrado != null ? _utilidades.generarJWT(usuarioEncontrado) : ""
-                });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { mensaje = "Error interno del servidor", error = ex.Message });
-            }
+            if (usuarioEncontrado == null)
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false, token = "" });
+            else
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true, token = _utilidades.generarJWT(usuarioEncontrado) });
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApi.Models;
 using WebApi.Models.DTOs.Producto;
+using WebApi.Models.DTOs.Remate;
 
 namespace WebApi.Controllers
 {
@@ -15,48 +16,13 @@ namespace WebApi.Controllers
     public class ProductoController : ControllerBase
     {
         private readonly SubastaMetodologiaDbContext _context;
-
+        
         public ProductoController(SubastaMetodologiaDbContext context)
         {
             _context = context;
         }
 
-        //[HttpPost("publicar")]
-        //[Authorize]
-        //public async Task<IActionResult> PublicarProducto([FromBody] CrearProductoDto dto)
-        //{
-        //    if (dto == null) return BadRequest("Datos inválidos");
-
-        //    try
-        //    {
-        //        var usuario = await _context.Usuarios.FindAsync(dto.IdUsuario);
-        //        if (usuario == null) return NotFound("Usuario no encontrado");
-
-        //        var remate = await _context.Remates.FindAsync(dto.IdRemate);
-        //        if (remate == null) return NotFound("Remate no encontrado");
-        //        if (remate.Estado != "activo") return BadRequest("El remate no está activo");
-
-        //        var producto = new Producto
-        //        {
-        //            Titulo = dto.Titulo,
-        //            Descripcion = dto.Descripcion,
-        //            PrecioBase = dto.PrecioBase,
-        //            Imagenes = dto.Imagenes,
-        //            IdRemate = dto.IdRemate,
-        //            IdUsuario = dto.IdUsuario,
-        //            Estado = "Pendiente"
-        //        };
-
-        //        _context.Productos.Add(producto);
-        //        await _context.SaveChangesAsync();
-
-        //        return Ok(new { mensaje = "Producto publicado y pendiente de aprobación", idProducto = producto.IdProducto });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, "Error interno del servidor: " + ex.Message);
-        //    }
-        //}
+        
         [HttpPost("publicar")]
         [Authorize]
         public async Task<IActionResult> PublicarProducto([FromForm] CrearProductoDto dto) // Usar [FromForm] para aceptar archivos
@@ -134,8 +100,30 @@ namespace WebApi.Controllers
                 return StatusCode(500, "Error interno del servidor: " + ex.Message);
             }
         }
+        [HttpGet("por-remate/{idRemate}")]
+        public async Task<IActionResult> ObtenerProductosPorRemate(int idRemate)
+        {
+            try
+            {
+                var remate = await _context.Remates.FindAsync(idRemate);
+                if (remate == null) return NotFound("Remate no encontrado");
 
-       
+                var productos = await _context.Productos
+                    .Where(p => p.IdRemate == idRemate)
+                    .ToListAsync();
+
+                if (!productos.Any()) return NotFound("No hay productos en este remate");
+
+                return Ok(productos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno del servidor: " + ex.Message);
+            }
+        }
+
+     
+
         [HttpPut("aprobar/{idProducto}")]
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> AprobarProducto(int idProducto)

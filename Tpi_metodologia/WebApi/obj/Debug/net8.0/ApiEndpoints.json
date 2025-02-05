@@ -112,6 +112,22 @@
   },
   {
     "ContainingType": "WebApi.Controllers.ProductoController",
+    "Method": "ObtenerProductosPorRemate",
+    "RelativePath": "api/Producto/por-remate/{idRemate}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRemate",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.ProductoController",
     "Method": "PublicarProducto",
     "RelativePath": "api/Producto/publicar",
     "HttpMethod": "POST",
