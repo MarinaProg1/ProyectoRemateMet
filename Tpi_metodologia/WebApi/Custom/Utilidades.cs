@@ -5,7 +5,6 @@ using System.Security.Cryptography;
 using System.Text;
 using WebApi.Models;
 using WebApi;
-using WebApi.Models;
 
 namespace WebApi.Custom
 {
@@ -49,7 +48,7 @@ namespace WebApi.Custom
             //crear detalle del token
             var jwtConfig = new JwtSecurityToken(
                 claims: userClaims,
-                expires: DateTime.UtcNow.AddMinutes(20),
+                expires: DateTime.UtcNow.AddMinutes(30),
                 signingCredentials: credentials
                 );
 
