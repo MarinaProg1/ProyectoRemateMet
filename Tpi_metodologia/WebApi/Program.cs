@@ -6,10 +6,7 @@ using System.Text;
 using WebApi.Custom;
 using WebApi.Models;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
-
 
 // Agregar servicios al contenedor
 builder.Services.AddControllers()
@@ -36,7 +33,7 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Ingrese el token en el formato: Bearer {tu_token_jwt}"
     });
 
-    // 📌 Agregar la configuración de seguridad global
+  
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -49,7 +46,7 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Configurar Entity Framework con SQL Server
+
 builder.Services.AddDbContext<SubastaMetodologiaDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
@@ -57,51 +54,63 @@ builder.Services.AddDbContext<SubastaMetodologiaDbContext>(options =>
 
 builder.Services.AddSingleton<Utilidades>();
 
-builder.Services.AddControllers().AddNewtonsoftJson();
-
-// 🔹 Configurar autenticación JWT
-builder.Services.AddAuthentication(config =>
-{
-    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(config =>
-{
-    config.RequireHttpsMetadata = false;
-    config.SaveToken = true;
-    config.TokenValidationParameters = new TokenValidationParameters
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        ValidateIssuerSigningKey = true,
-        ValidateIssuer = false,
-        ValidateAudience = false,
-        ValidateLifetime = true,
-        IssuerSigningKey = new SymmetricSecurityKey
-        (Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]!))
-    };
-});
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"] ?? throw new InvalidOperationException("Jwt:key no está configurado.")))
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                // Buscar el token en las cookies
+                var token = context.Request.Cookies["jwt_token"];
+
+                if (!string.IsNullOrEmpty(token))
+                {
+                    context.Token = token;
+                }
+
+                return Task.CompletedTask;
+            }
+        };
+    });
 
 builder.Services.AddScoped<RemateService>();
 
-// Configurar CORS
+// ✅ Configurar CORS correctamente
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("NewPolicy", app =>
     {
-        app.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        app.WithOrigins("http://localhost:5151") 
+           .AllowAnyMethod()
+           .AllowAnyHeader()
+           .AllowCredentials(); 
     });
 });
 
 var app = builder.Build();
 
-// Configurar Swagger en desarrollo
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseCors("NewPolicy");
-app.UseAuthentication();
-app.UseAuthorization();
+
+app.UseCors("NewPolicy"); 
+app.UseAuthentication(); 
+app.UseAuthorization();   
 
 app.MapControllers();
 

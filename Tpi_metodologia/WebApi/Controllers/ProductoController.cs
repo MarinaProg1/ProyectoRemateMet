@@ -101,29 +101,30 @@ namespace WebApi.Controllers
                 return StatusCode(500, "Error interno del servidor: " + ex.Message);
             }
         }
+
         [HttpGet("por-remate/{idRemate}")]
         public async Task<IActionResult> ObtenerProductosPorRemate(int idRemate)
         {
             try
             {
-                var remate = await _context.Remates.FindAsync(idRemate);
-                if (remate == null) return NotFound("Remate no encontrado");
-
                 var productos = await _context.Productos
                     .Where(p => p.IdRemate == idRemate)
                     .ToListAsync();
 
-                if (!productos.Any()) return NotFound("No hay productos en este remate");
+                if (!productos.Any())
+                {
+                    return NotFound(new { message = "No hay productos para este remate", idRemate });
+                }
 
                 return Ok(productos);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Error interno del servidor: " + ex.Message);
+                return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
             }
         }
 
-     
+
 
         [HttpPut("aprobar/{idProducto}")]
         [Authorize(Roles = "admin")]

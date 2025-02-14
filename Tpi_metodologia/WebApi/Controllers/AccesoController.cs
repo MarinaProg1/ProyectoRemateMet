@@ -55,21 +55,47 @@ namespace WebApi.Controllers
             }
         }
 
-        
+
         [HttpPost]
         [Route("Login")]
-        public async Task<IActionResult> Login(LoginDTO objeto)
+        public async Task<IActionResult> Login([FromBody] LoginDTO objeto)
         {
+            // Verificar que el usuario existe y la contraseña es correcta
             var usuarioEncontrado = await _dbPruebaContext.Usuarios
-                                                    .Where(u =>
-                                                        u.Email == objeto.Email &&
-                                                        u.Clave == _utilidades.encriptarSHA256(objeto.Clave)
-                                                      ).FirstOrDefaultAsync();
+                .Where(u => u.Email == objeto.Email && u.Clave == _utilidades.encriptarSHA256(objeto.Clave))
+                .FirstOrDefaultAsync();
 
             if (usuarioEncontrado == null)
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false, token = "" });
-            else
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true, token = _utilidades.generarJWT(usuarioEncontrado) });
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized, new { isSuccess = false, message = "Credenciales incorrectas" });
+            }
+
+            // ✅ Generar el token JWT
+            var token = _utilidades.generarJWT(usuarioEncontrado);
+          
+            // ✅ Configurar la cookie HTTP-Only para almacenar el token
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = false,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.UtcNow.AddMinutes(30)
+            };
+
+            // Enviar la cookie al cliente
+            Response.Cookies.Append("jwt_token", token, cookieOptions);
+
+            // Retornar el token en la respuesta para que MVC pueda usarlo
+            return Ok(new { isSuccess = true, token, message = "Inicio de sesión exitoso" });
         }
+
+
+        [HttpGet("ValidarToken")]
+        
+        public IActionResult ValidarToken()
+        {
+            return Ok(new { isValid = true, mensaje = "Token válido" });
+        }
+
     }
 }

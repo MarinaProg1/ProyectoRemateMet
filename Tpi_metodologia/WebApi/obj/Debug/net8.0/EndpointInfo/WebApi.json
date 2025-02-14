@@ -77,6 +77,18 @@
         }
       }
     },
+    "/api/Acceso/ValidarToken": {
+      "get": {
+        "tags": [
+          "Acceso"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Oferta/ofertar/{idProducto}": {
       "post": {
         "tags": [

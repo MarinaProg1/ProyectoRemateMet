@@ -32,6 +32,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApi.Controllers.AccesoController",
+    "Method": "ValidarToken",
+    "RelativePath": "api/Acceso/ValidarToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApi.Controllers.OfertaController",
     "Method": "RealizarOferta",
     "RelativePath": "api/Oferta/ofertar/{idProducto}",
