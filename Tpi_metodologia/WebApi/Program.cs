@@ -33,7 +33,6 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Ingrese el token en el formato: Bearer {tu_token_jwt}"
     });
 
-  
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -45,7 +44,6 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
 
 builder.Services.AddDbContext<SubastaMetodologiaDbContext>(options =>
 {
@@ -65,23 +63,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuer = false,
             ValidateAudience = false,
             ValidateLifetime = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"] ?? throw new InvalidOperationException("Jwt:key no está configurado.")))
-        };
-
-        options.Events = new JwtBearerEvents
-        {
-            OnMessageReceived = context =>
-            {
-                // Buscar el token en las cookies
-                var token = context.Request.Cookies["jwt_token"];
-
-                if (!string.IsNullOrEmpty(token))
-                {
-                    context.Token = token;
-                }
-
-                return Task.CompletedTask;
-            }
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                builder.Configuration["Jwt:key"] ?? throw new InvalidOperationException("Jwt:key no está configurado.")))
         };
     });
 
@@ -92,10 +75,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("NewPolicy", app =>
     {
-        app.WithOrigins("http://localhost:5151") 
+        app.WithOrigins("http://localhost:5151")
            .AllowAnyMethod()
-           .AllowAnyHeader()
-           .AllowCredentials(); 
+           .AllowAnyHeader();
     });
 });
 
@@ -107,10 +89,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
-app.UseCors("NewPolicy"); 
-app.UseAuthentication(); 
-app.UseAuthorization();   
+app.UseCors("NewPolicy");
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 
