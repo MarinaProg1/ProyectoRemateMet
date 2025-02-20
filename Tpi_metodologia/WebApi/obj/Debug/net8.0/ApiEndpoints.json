@@ -44,16 +44,11 @@
   {
     "ContainingType": "WebApi.Controllers.OfertaController",
     "Method": "RealizarOferta",
-    "RelativePath": "api/Oferta/ofertar/{idProducto}",
+    "RelativePath": "api/Oferta/ofertar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "idProducto",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
       {
         "Name": "dto",
         "Type": "WebApi.Models.DTOs.Oferta.OfertaDto",
@@ -97,13 +92,18 @@
   {
     "ContainingType": "WebApi.Controllers.ProductoController",
     "Method": "AprobarProducto",
-    "RelativePath": "api/Producto/aprobar/{idProducto}",
+    "RelativePath": "api/Producto/aprobar/{idProducto}/{idRemate}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idRemate",
         "Type": "System.Int32",
         "IsRequired": true
       }

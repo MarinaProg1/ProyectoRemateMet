@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApi.Models;
@@ -16,14 +18,12 @@ namespace WebApi.Controllers
     public class ProductoController : ControllerBase
     {
         private readonly SubastaMetodologiaDbContext _context;
-        
+
         public ProductoController(SubastaMetodologiaDbContext context)
         {
             _context = context;
         }
 
-
-        
         [HttpPost("publicar")]
         [Authorize]
         public async Task<IActionResult> PublicarProducto([FromForm] CrearProductoDto dto)
@@ -93,7 +93,20 @@ namespace WebApi.Controllers
         {
             try
             {
-                var productos = await _context.Productos.Where(p => p.Estado == "Pendiente").ToListAsync();
+                var productos = await _context.Productos
+                    .Where(p => p.Estado == "pendiente")
+                    .Select(p => new
+                    {
+                        p.IdProducto,
+                        p.IdRemate,
+                        p.Titulo,
+                        p.PrecioBase,
+                        p.Descripcion,
+                        p.Imagenes,
+                        p.Estado
+                    })
+                    .ToListAsync();
+
                 return Ok(productos);
             }
             catch (Exception ex)
@@ -102,7 +115,6 @@ namespace WebApi.Controllers
             }
         }
 
-      
         [HttpGet("por-remate/{idRemate}")]
         public async Task<IActionResult> ObtenerProductosPorRemate(int idRemate)
         {
@@ -110,11 +122,19 @@ namespace WebApi.Controllers
             {
                 var productos = await _context.Productos
                     .Where(p => p.IdRemate == idRemate)
+                    .Select(p => new
+                    {
+                        p.IdProducto,
+                        p.Titulo,
+                        p.PrecioBase,
+                        p.Descripcion,
+                        p.Imagenes,
+                        p.Estado
+                    })
                     .ToListAsync();
 
                 if (!productos.Any())
                 {
-                    // Responder con un código 200 OK y el mensaje
                     return Ok(new { message = "No hay productos para este remate", idRemate });
                 }
 
@@ -122,34 +142,68 @@ namespace WebApi.Controllers
             }
             catch (Exception ex)
             {
-                // Responder con código 500 en caso de error interno
                 return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
             }
         }
 
+        //[HttpPut("aprobar/{idProducto}")]
+        //[Authorize(Roles = "admin")]
+        //public async Task<IActionResult> AprobarProducto(int idProducto)
+        //{
+        //    try
+        //    {
+        //        var producto = await _context.Productos.FindAsync(idProducto);
+        //        if (producto == null) return NotFound("Producto no encontrado");
+        //        if (producto.Estado != "pendiente") return BadRequest("El producto ya fue evaluado");
 
+        //        producto.Estado = "aprobado";
 
-        [HttpPut("aprobar/{idProducto}")]
+        //        var remate = await _context.Remates.FirstOrDefaultAsync(r => r.Estado == "abierto");
+        //        if (remate == null) return BadRequest("No hay remates activos para asociar el producto");
+
+        //        producto.IdRemate = remate.IdRemate;
+
+        //        _context.Productos.Update(producto);
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok(new { mensaje = "Producto aprobado y asociado a un remate", idProducto = producto.IdProducto });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, "Error interno del servidor: " + ex.Message);
+        //    }
+        //}
+        [HttpPut("aprobar/{idProducto}/{idRemate}")]
         [Authorize(Roles = "admin")]
-        public async Task<IActionResult> AprobarProducto(int idProducto)
+        public async Task<IActionResult> AprobarProducto(int idProducto, int idRemate)
         {
             try
             {
+                // Buscar el producto por su ID
                 var producto = await _context.Productos.FindAsync(idProducto);
-                if (producto == null) return NotFound("Producto no encontrado");
-                if (producto.Estado != "pendiente") return BadRequest("El producto ya fue evaluado");
+                if (producto == null)
+                    return NotFound("Producto no encontrado");
 
+                // Verificar si el producto ya fue evaluado
+                if (producto.Estado != "pendiente")
+                    return BadRequest("El producto ya fue evaluado");
+
+                // Aprobar el producto
                 producto.Estado = "aprobado";
 
-                var remate = await _context.Remates.FirstOrDefaultAsync(r => r.Estado == "abierto");
-                if (remate == null) return BadRequest("No hay remates activos para asociar el producto");
+                // Buscar el remate con el ID especificado y que esté abierto
+                var remate = await _context.Remates.FirstOrDefaultAsync(r => r.IdRemate == idRemate && r.Estado == "abierto");
+                if (remate == null)
+                    return BadRequest("El remate especificado no está activo o no existe.");
 
+                // Asociar el producto al remate correcto
                 producto.IdRemate = remate.IdRemate;
 
+                // Actualizar el producto en la base de datos
                 _context.Productos.Update(producto);
                 await _context.SaveChangesAsync();
 
-                return Ok(new { mensaje = "Producto aprobado y asociado a un remate", idProducto = producto.IdProducto });
+                return Ok(new { mensaje = "Producto aprobado y asociado al remate especificado", idProducto = producto.IdProducto });
             }
             catch (Exception ex)
             {
@@ -157,12 +211,12 @@ namespace WebApi.Controllers
             }
         }
 
-        
+
         [HttpGet("imagen/{fileName}")]
         [AllowAnonymous]
         public IActionResult ObtenerImagen(string fileName)
         {
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imagenes", fileName); // Corregido
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imagenes", fileName);
 
             if (!System.IO.File.Exists(filePath))
             {
@@ -172,8 +226,5 @@ namespace WebApi.Controllers
             var mimeType = "image/jpeg"; // Puedes mejorarlo detectando el tipo MIME automáticamente
             return PhysicalFile(filePath, mimeType);
         }
-
     }
-
-
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VLCWUZso3OShS8emoFluOnyYw7ujWpWWZVcfgDAZU6w=",
+  "Hash": "pz3ZI0HvAfKkW9VGuuOwHGCwQfzo9968xvh/cO/gBnE=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "imagenes/3c27b1f1-3a52-4a43-a6fa-1649620277ec#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vx8shiud6i",
+      "Integrity": "vYrNUyF/s2KIq2sh5fiI4z7vA/N9fvxtljIOIj0AMv8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png"
+    },
     {
       "Identity": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png",
       "SourceId": "WebApi",
@@ -99,9 +120,112 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png"
+    },
+    {
+      "Identity": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\e8596f8b-533d-422d-9c6a-7d2d238b92f5.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "imagenes/e8596f8b-533d-422d-9c6a-7d2d238b92f5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dcyvhm2rcf",
+      "Integrity": "nWirGDh8RXBCE5f0amv1uzF+phEIdPZU7fRBPhx0hAQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\e8596f8b-533d-422d-9c6a-7d2d238b92f5.png"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "imagenes/3c27b1f1-3a52-4a43-a6fa-1649620277ec.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166211"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vYrNUyF/s2KIq2sh5fiI4z7vA/N9fvxtljIOIj0AMv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:06:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vYrNUyF/s2KIq2sh5fiI4z7vA/N9fvxtljIOIj0AMv8="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/3c27b1f1-3a52-4a43-a6fa-1649620277ec.vx8shiud6i.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166211"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vYrNUyF/s2KIq2sh5fiI4z7vA/N9fvxtljIOIj0AMv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 17:06:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vx8shiud6i"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/3c27b1f1-3a52-4a43-a6fa-1649620277ec.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vYrNUyF/s2KIq2sh5fiI4z7vA/N9fvxtljIOIj0AMv8="
+        }
+      ]
+    },
     {
       "Route": "imagenes/5d0d664a-fffd-4110-919f-956eea918e44.2lds6kj5fk.png",
       "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png",
@@ -427,6 +551,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-OsZotK2MRtTH90rDU3d3ZkyO1mhJtIS2B8UlEZNIDMg="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/e8596f8b-533d-422d-9c6a-7d2d238b92f5.dcyvhm2rcf.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\e8596f8b-533d-422d-9c6a-7d2d238b92f5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nWirGDh8RXBCE5f0amv1uzF+phEIdPZU7fRBPhx0hAQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 12:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dcyvhm2rcf"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/e8596f8b-533d-422d-9c6a-7d2d238b92f5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nWirGDh8RXBCE5f0amv1uzF+phEIdPZU7fRBPhx0hAQ="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/e8596f8b-533d-422d-9c6a-7d2d238b92f5.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\e8596f8b-533d-422d-9c6a-7d2d238b92f5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nWirGDh8RXBCE5f0amv1uzF+phEIdPZU7fRBPhx0hAQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 12:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nWirGDh8RXBCE5f0amv1uzF+phEIdPZU7fRBPhx0hAQ="
         }
       ]
     }

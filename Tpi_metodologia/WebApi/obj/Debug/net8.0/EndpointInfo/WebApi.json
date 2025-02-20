@@ -89,21 +89,10 @@
         }
       }
     },
-    "/api/Oferta/ofertar/{idProducto}": {
+    "/api/Oferta/ofertar": {
       "post": {
         "tags": [
           "Oferta"
-        ],
-        "parameters": [
-          {
-            "name": "idProducto",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -282,7 +271,7 @@
         }
       }
     },
-    "/api/Producto/aprobar/{idProducto}": {
+    "/api/Producto/aprobar/{idProducto}/{idRemate}": {
       "put": {
         "tags": [
           "Producto"
@@ -290,6 +279,15 @@
         "parameters": [
           {
             "name": "idProducto",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idRemate",
             "in": "path",
             "required": true,
             "schema": {
@@ -453,6 +451,10 @@
       "OfertaDto": {
         "type": "object",
         "properties": {
+          "idProducto": {
+            "type": "integer",
+            "format": "int32"
+          },
           "idUsuario": {
             "type": "integer",
             "format": "int32"

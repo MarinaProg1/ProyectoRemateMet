@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using WebApi.Models;
 using WebApi.Models.DTOs.Oferta;
 
-
 namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
@@ -16,26 +15,27 @@ namespace WebApi.Controllers
     {
         private readonly SubastaMetodologiaDbContext _context;
         private readonly RemateService _remateService;
+
         public OfertaController(SubastaMetodologiaDbContext context, RemateService remateService)
         {
             _context = context;
             _remateService = remateService;
         }
-        [HttpPost("ofertar/{idProducto}")]
+
+        [HttpPost("ofertar")]
         [Authorize]
-        public async Task<IActionResult> RealizarOferta(int idProducto, [FromBody] OfertaDto dto)
+        public async Task<IActionResult> RealizarOferta([FromBody] OfertaDto dto)
         {
             try
             {
-                // Obtener el producto desde la base de datos
-                var producto = await _context.Productos.FindAsync(idProducto);
-                if (producto == null) return NotFound("Producto no encontrado");
+                // Obtener el producto desde la base de datos usando el IdProducto del cuerpo
+                var producto = await _context.Productos.FindAsync(dto.IdProducto);
+                if (producto == null)
+                    return NotFound("Producto no encontrado");
 
                 // Verificar si el producto está aprobado
                 if (producto.Estado != "aprobado")
-                {
                     return BadRequest("El producto aún no está aprobado para recibir ofertas.");
-                }
 
                 // Verificar que el monto de la oferta sea mayor al precio base
                 if (dto.Monto <= producto.PrecioBase)
@@ -43,7 +43,7 @@ namespace WebApi.Controllers
 
                 // Verificar si ya se ha realizado una oferta para este producto por el mismo usuario
                 var ofertaExistente = await _context.Ofertas
-                    .FirstOrDefaultAsync(o => o.IdUsuario == dto.IdUsuario && o.IdProducto == idProducto);
+                    .FirstOrDefaultAsync(o => o.IdUsuario == dto.IdUsuario && o.IdProducto == dto.IdProducto);
                 if (ofertaExistente != null)
                     return BadRequest("Ya has realizado una oferta para este producto.");
 
@@ -51,7 +51,7 @@ namespace WebApi.Controllers
                 var oferta = new Oferta
                 {
                     IdUsuario = dto.IdUsuario,
-                    IdProducto = idProducto,
+                    IdProducto = dto.IdProducto,
                     Monto = dto.Monto,
                     Fecha = DateTime.Now,
                     Estado = "pendiente"
@@ -68,7 +68,6 @@ namespace WebApi.Controllers
                 return StatusCode(500, $"Error interno: {ex.Message}");
             }
         }
-
 
         [HttpGet("ofertas/{idProducto}")]
         [Authorize]
@@ -93,80 +92,49 @@ namespace WebApi.Controllers
             }
         }
 
-        //[HttpPost("seleccionar-ganadora/{idProducto}")]
-        //[Authorize(Roles = "admin")]
-        //public async Task<IActionResult> SeleccionarOfertaGanadora(int idProducto)
-        //{
-        //    try
-        //    {
-        //        var ofertas = await _context.Ofertas
-        //            .Where(o => o.IdProducto == idProducto)
-        //            .OrderByDescending(o => o.Monto)
-        //            .ThenBy(o => o.Fecha)
-        //            .ToListAsync();
-
-        //        if (ofertas == null || ofertas.Count == 0)
-        //            return NotFound("No hay ofertas para este producto.");
-
-        //        var ofertaGanadora = ofertas.First();
-        //        ofertaGanadora.Estado = "Ganadora";
-
-        //        _context.Ofertas.UpdateRange(ofertas);
-        //        await _context.SaveChangesAsync();
-
-        //        return Ok(new { mensaje = "Oferta ganadora seleccionada", ofertaGanadora });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"Error interno: {ex.Message}");
-        //    }
-        //}
-       
-
-[HttpPost("seleccionar-ganadora/{idProducto}")]
-    [Authorize(Roles = "admin")]
-    public async Task<IActionResult> SeleccionarOfertaGanadora(int idProducto)
-    {
-        try
+        [HttpPost("seleccionar-ganadora/{idProducto}")]
+        public async Task<IActionResult> SeleccionarOfertaGanadora(int idProducto)
         {
-            var ofertas = await _context.Ofertas
-                .Where(o => o.IdProducto == idProducto)
-                .OrderByDescending(o => o.Monto)
-                .ThenBy(o => o.Fecha)
-                .ToListAsync();
-
-            if (ofertas == null || ofertas.Count == 0)
-                return NotFound("No hay ofertas para este producto.");
-
-            var ofertaGanadora = ofertas.First();
-            ofertaGanadora.Estado = "ganadora";
-
-            // Crear la factura
-            var factura = new Factura
+            try
             {
-                IdOferta = ofertaGanadora.IdOferta,
-                Fecha = DateTime.Now,
-                Monto = ofertaGanadora.Monto
-            };
+                var ofertas = await _context.Ofertas
+                    .Where(o => o.IdProducto == idProducto)
+                    .OrderByDescending(o => o.Monto)
+                    .ThenBy(o => o.Fecha)
+                    .ToListAsync();
 
-            _context.Facturas.Add(factura);
-            _context.Ofertas.Update(ofertaGanadora);
-            await _context.SaveChangesAsync();
+                if (ofertas == null || ofertas.Count == 0)
+                    return NotFound("No hay ofertas para este producto.");
 
-            // Obtener información del usuario ganador
-            var usuarioGanador = await _context.Usuarios.FindAsync(ofertaGanadora.IdUsuario);
-            if (usuarioGanador != null && !string.IsNullOrEmpty(usuarioGanador.Email))
-            {
-                _remateService.EnviarCorreoFactura(usuarioGanador.Email, usuarioGanador.Nombre, factura);
+                var ofertaGanadora = ofertas.First();
+                ofertaGanadora.Estado = "ganadora";
+
+                // Crear la factura
+                var factura = new Factura
+                {
+                    IdOferta = ofertaGanadora.IdOferta,
+                    Fecha = DateTime.Now,
+                    Monto = ofertaGanadora.Monto
+                };
+
+                _context.Facturas.Add(factura);
+                _context.Ofertas.Update(ofertaGanadora);
+                await _context.SaveChangesAsync();
+
+                // Obtener información del usuario ganador
+                var usuarioGanador = await _context.Usuarios.FindAsync(ofertaGanadora.IdUsuario);
+                if (usuarioGanador != null && !string.IsNullOrEmpty(usuarioGanador.Email))
+                {
+                    _remateService.EnviarCorreoFactura(usuarioGanador.Email, usuarioGanador.Nombre, factura);
+                }
+
+                return Ok(new { mensaje = "Oferta ganadora seleccionada y factura generada", factura });
             }
-
-            return Ok(new { mensaje = "Oferta ganadora seleccionada y factura generada", factura });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, $"Error interno: {ex.Message}");
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno: {ex.Message}");
+            }
         }
     }
+}
 
-}
-}
