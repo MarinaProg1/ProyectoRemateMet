@@ -112,6 +112,22 @@
   },
   {
     "ContainingType": "WebApi.Controllers.ProductoController",
+    "Method": "ObtenerImagen",
+    "RelativePath": "api/Producto/imagen/{fileName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.ProductoController",
     "Method": "ObtenerProductosPendientes",
     "RelativePath": "api/Producto/pendientes",
     "HttpMethod": "GET",

@@ -305,6 +305,28 @@
         }
       }
     },
+    "/api/Producto/imagen/{fileName}": {
+      "get": {
+        "tags": [
+          "Producto"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/remates/crear": {
       "post": {
         "tags": [

@@ -286,6 +286,7 @@ C:\Users\marin\source\repos\Proyecto_Metodologia\WebApi\obj\Debug\net8.0\WebApi.
 C:\Users\marin\source\repos\Proyecto_Metodologia\WebApi\obj\Debug\net8.0\ref\WebApi.dll
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\bin\Debug\net8.0\appsettings.json
+C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\bin\Debug\net8.0\WebApi.staticwebassets.runtime.json
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\bin\Debug\net8.0\WebApi.staticwebassets.endpoints.json
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\bin\Debug\net8.0\WebApi.exe
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\bin\Debug\net8.0\WebApi.deps.json
@@ -412,6 +413,7 @@ C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debu
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.csproj.CoreCompileInputs.cache
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\scopedcss\bundle\WebApi.styles.css
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\staticwebassets.development.json
@@ -429,4 +431,3 @@ C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debu
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.pdb
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\ref\WebApi.dll
-C:\Users\marin\source\repos\UlimoTPI_Metodologia\Tpi_metodologia\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
