@@ -69,6 +69,7 @@ namespace WebApi.Controllers
             }
         }
 
+        
         [HttpGet("ofertas/{idProducto}")]
         [Authorize]
         public async Task<IActionResult> ObtenerOfertas(int idProducto)
@@ -79,6 +80,16 @@ namespace WebApi.Controllers
                     .Where(o => o.IdProducto == idProducto)
                     .OrderByDescending(o => o.Monto)
                     .ThenBy(o => o.Fecha)
+                    .Select(o => new
+                    {
+                        o.IdOferta,
+                        o.IdUsuario,
+                        o.IdProducto,
+                        o.Fecha,
+                        o.Monto,
+                        o.Estado,
+                        NombreUsuario = o.IdUsuarioNavigation.Nombre // Incluye el nombre del usuario
+                    })
                     .ToListAsync();
 
                 if (ofertas == null || ofertas.Count == 0)
@@ -91,6 +102,7 @@ namespace WebApi.Controllers
                 return StatusCode(500, $"Error interno: {ex.Message}");
             }
         }
+
 
         [HttpPost("seleccionar-ganadora/{idProducto}")]
         public async Task<IActionResult> SeleccionarOfertaGanadora(int idProducto)

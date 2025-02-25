@@ -7,44 +7,48 @@
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\producto\\productodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\producto\\productodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\producto\\crearproductodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\producto\\crearproductodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\producto\\productodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\producto\\productodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\producto\\crearproductodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\producto\\crearproductodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\oferta\\ofertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\oferta\\ofertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\remate\\crearrematedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\remate\\crearrematedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\wwwroot\\imagenes\\72d78948-bed5-4bc7-84ba-367dc62814dc.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\wwwroot\\imagenes\\72d78948-bed5-4bc7-84ba-367dc62814dc.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
@@ -63,16 +67,36 @@
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\remate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\remate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\usuario\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\usuario\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\oferta\\ofertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\oferta\\ofertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\controllers\\rematecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\rematecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\usuario\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\usuario\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -87,28 +111,12 @@
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\remate\\rematedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\dtos\\remate\\crearrematedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\dtos\\remate\\crearrematedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\remate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\remate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\controllers\\rematecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\rematecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\service\\remateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\service\\remateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|solutionrelative:webapi\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DC87E9B-ED39-4543-B9CF-B0B04C45F7BD}|WebApi\\WebApi.csproj|c:\\users\\marin\\source\\repos\\ulimotpi_metodologia\\tpi_metodologia\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -122,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 37,
+          "SelectedChildIndex": 34,
           "Children": [
             {
               "$type": "Bookmark",
@@ -153,6 +161,369 @@
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "72d78948-bed5-4bc7-84ba-367dc62814dc.png -  [Spanish (Spain, International Sort)] - PNG [446x298, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\72d78948-bed5-4bc7-84ba-367dc62814dc.png",
+              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\72d78948-bed5-4bc7-84ba-367dc62814dc.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\72d78948-bed5-4bc7-84ba-367dc62814dc.png -  [Spanish (Spain, International Sort)] - PNG [446x298, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\72d78948-bed5-4bc7-84ba-367dc62814dc.png -  [Spanish (Spain, International Sort)] - PNG [446x298, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-21T22:57:54.18Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [446x298, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "3c27b1f1-3a52-4a43-a6fa-1649620277ec.png -  [Spanish (Spain, International Sort)] - PNG [343x212, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png",
+              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png -  [Spanish (Spain, International Sort)] - PNG [343x212, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png -  [Spanish (Spain, International Sort)] - PNG [343x212, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-21T22:57:50.62Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [343x212, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductoDto.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
+              "RelativeToolTip": "WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:13:47.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OfertaDto.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
+              "RelativeToolTip": "WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:26:02.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "5d0d664a-fffd-4110-919f-956eea918e44.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png",
+              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-19T22:49:16.07Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "bddcbf0e-a5f3-414c-a619-578fa0219a43.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png",
+              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-19T22:49:13.341Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png",
+              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-19T22:49:10.55Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png",
+              "RelativeDocumentMoniker": "WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-19T22:48:55.324Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "667fb500-36e2-4f5e-ae23-f8eeea9a4800.png -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png",
+              "RelativeDocumentMoniker": "WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-19T22:48:53.833Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "7e272505-646e-49b6-97c8-5222e0315ada.png -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png",
+              "RelativeDocumentMoniker": "WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-19T22:48:47.689Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RemateDto.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
+              "RelativeToolTip": "WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T13:15:32.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CrearRemateDto.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
+              "RelativeToolTip": "WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T13:15:17.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Remate.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Remate.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\Remate.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Remate.cs",
+              "RelativeToolTip": "WebApi\\Models\\Remate.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T13:14:39.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
+              "RelativeToolTip": "WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T21:33:16.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
+              "RelativeToolTip": "WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T21:32:46.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AccesoController.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\AccesoController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\AccesoController.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\AccesoController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\AccesoController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAiwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T14:53:23.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "787eef3c-2454-406d-8f91-ea8baf04d962.png -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png",
+              "RelativeDocumentMoniker": "WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]",
+              "RelativeToolTip": "WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-01T22:29:15.472Z",
+              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\appsettings.json",
+              "RelativeToolTip": "WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-01T15:18:44.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RemateService.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Service\\RemateService.cs",
+              "RelativeDocumentMoniker": "WebApi\\Service\\RemateService.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Service\\RemateService.cs",
+              "RelativeToolTip": "WebApi\\Service\\RemateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T15:07:01.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Factura.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Factura.cs",
+              "RelativeToolTip": "WebApi\\Models\\Factura.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:55:18.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "WebApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:54:32.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:36:17.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WebApi.csproj",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\WebApi.csproj",
+              "RelativeDocumentMoniker": "WebApi\\WebApi.csproj",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\WebApi.csproj",
+              "RelativeToolTip": "WebApi\\WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-01T13:43:09.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Oferta.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Oferta.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\Oferta.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Oferta.cs",
+              "RelativeToolTip": "WebApi\\Models\\Oferta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T13:09:00.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OfertaController.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\OfertaController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\OfertaController.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\OfertaController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\OfertaController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAAJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T00:34:25.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RemateController.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\RemateController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\RemateController.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\RemateController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\RemateController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAcwIMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T00:27:40.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Utilidades.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Custom\\Utilidades.cs",
+              "RelativeDocumentMoniker": "WebApi\\Custom\\Utilidades.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Custom\\Utilidades.cs",
+              "RelativeToolTip": "WebApi\\Custom\\Utilidades.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwCkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T00:08:13.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAzwHsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T00:07:36.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CrearProductoDto.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
+              "RelativeToolTip": "WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T00:07:08.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "WebApi\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Producto.cs",
+              "RelativeToolTip": "WebApi\\Models\\Producto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T00:06:27.209Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
@@ -171,349 +542,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductoDto.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
-              "RelativeToolTip": "WebApi\\Models\\DTOs\\Producto\\ProductoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:13:47.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OfertaDto.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
-              "RelativeToolTip": "WebApi\\Models\\DTOs\\Oferta\\OfertaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T12:26:02.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "5d0d664a-fffd-4110-919f-956eea918e44.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png",
-              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\5d0d664a-fffd-4110-919f-956eea918e44.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-19T22:49:16.07Z",
-              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "bddcbf0e-a5f3-414c-a619-578fa0219a43.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png",
-              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\bddcbf0e-a5f3-414c-a619-578fa0219a43.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-19T22:49:13.341Z",
-              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png",
-              "RelativeDocumentMoniker": "WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "RelativeToolTip": "WebApi\\wwwroot\\imagenes\\d3238c85-7a36-439e-b9f4-ea353fa5c4f2.png -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-19T22:49:10.55Z",
-              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [429x285, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png",
-              "RelativeDocumentMoniker": "WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]",
-              "RelativeToolTip": "WebApi\\Uploads\\422e18ff-6b46-42c7-94b6-b3ff2ea4a015.png -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-19T22:48:55.324Z",
-              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [194x174, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "667fb500-36e2-4f5e-ae23-f8eeea9a4800.png -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png",
-              "RelativeDocumentMoniker": "WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]",
-              "RelativeToolTip": "WebApi\\Uploads\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-19T22:48:53.833Z",
-              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [416x294, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "7e272505-646e-49b6-97c8-5222e0315ada.png -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png",
-              "RelativeDocumentMoniker": "WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]",
-              "RelativeToolTip": "WebApi\\Uploads\\7e272505-646e-49b6-97c8-5222e0315ada.png -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-19T22:48:47.689Z",
-              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [420x238, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RemateDto.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
-              "RelativeToolTip": "WebApi\\Models\\DTOs\\Remate\\RemateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:15:32.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CrearRemateDto.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
-              "RelativeToolTip": "WebApi\\Models\\DTOs\\Remate\\CrearRemateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:15:17.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Remate.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Remate.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\Remate.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Remate.cs",
-              "RelativeToolTip": "WebApi\\Models\\Remate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:14:39.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
-              "RelativeToolTip": "WebApi\\Models\\DTOs\\Usuario\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:33:16.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
-              "RelativeToolTip": "WebApi\\Models\\DTOs\\Usuario\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:32:46.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AccesoController.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\AccesoController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\AccesoController.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\AccesoController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\AccesoController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:53:23.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "787eef3c-2454-406d-8f91-ea8baf04d962.png -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png",
-              "RelativeDocumentMoniker": "WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]",
-              "RelativeToolTip": "WebApi\\Uploads\\787eef3c-2454-406d-8f91-ea8baf04d962.png -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-01T22:29:15.472Z",
-              "EditorCaption": " -  [Spanish (Spain, International Sort)] - PNG [198x153, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\appsettings.json",
-              "RelativeToolTip": "WebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-01T15:18:44.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RemateService.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Service\\RemateService.cs",
-              "RelativeDocumentMoniker": "WebApi\\Service\\RemateService.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Service\\RemateService.cs",
-              "RelativeToolTip": "WebApi\\Service\\RemateService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T15:07:01.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Factura.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\Factura.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Factura.cs",
-              "RelativeToolTip": "WebApi\\Models\\Factura.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:55:18.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Usuario.cs",
-              "RelativeToolTip": "WebApi\\Models\\Usuario.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:54:32.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Program.cs",
-              "RelativeToolTip": "WebApi\\Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAAFwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:36:17.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "WebApi.csproj",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\WebApi.csproj",
-              "RelativeDocumentMoniker": "WebApi\\WebApi.csproj",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\WebApi.csproj",
-              "RelativeToolTip": "WebApi\\WebApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-01T13:43:09.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Oferta.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Oferta.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\Oferta.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Oferta.cs",
-              "RelativeToolTip": "WebApi\\Models\\Oferta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T13:09:00.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OfertaController.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\OfertaController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\OfertaController.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\OfertaController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\OfertaController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAywDEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T00:34:25.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RemateController.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\RemateController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\RemateController.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\RemateController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\RemateController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAAAJEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T00:27:40.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Utilidades.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Custom\\Utilidades.cs",
-              "RelativeDocumentMoniker": "WebApi\\Custom\\Utilidades.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Custom\\Utilidades.cs",
-              "RelativeToolTip": "WebApi\\Custom\\Utilidades.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAA/wCgAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T00:08:13.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAA0wGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T00:07:36.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrearProductoDto.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
-              "RelativeToolTip": "WebApi\\Models\\DTOs\\Producto\\CrearProductoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T00:07:08.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "WebApi\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\Models\\Producto.cs",
-              "RelativeToolTip": "WebApi\\Models\\Producto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T00:06:27.209Z",
-              "EditorCaption": ""
             }
           ]
         },

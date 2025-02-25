@@ -92,7 +92,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors("NewPolicy");
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseStaticFiles();
 app.MapControllers();
 
 app.Run();

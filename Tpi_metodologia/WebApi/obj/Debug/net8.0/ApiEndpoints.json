@@ -176,7 +176,7 @@
         "IsRequired": false
       },
       {
-        "Name": "Imagen",
+        "Name": "Imagenes",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },

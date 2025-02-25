@@ -46,13 +46,30 @@ namespace WebApi.Controllers
                 await _dbPruebaContext.Usuarios.AddAsync(modeloUsuario);
                 await _dbPruebaContext.SaveChangesAsync();
 
-                return Ok(new { isSuccess = modeloUsuario.IdUsuario != 0 });
+                // Si el IdUsuario es diferente de 0, el registro fue exitoso
+                if (modeloUsuario.IdUsuario != 0)
+                {
+                    return Ok(new
+                    {
+                        isSuccess = true,
+                        mensaje = "¡Registro exitoso! El usuario ha sido creado correctamente."
+                    });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        isSuccess = false,
+                        mensaje = "No se pudo crear el usuario. Inténtalo nuevamente."
+                    });
+                }
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { mensaje = "Error interno del servidor", error = ex.Message });
             }
         }
+
 
         [HttpPost]
         [Route("Login")]

@@ -192,7 +192,7 @@
                     "type": "number",
                     "format": "double"
                   },
-                  "Imagen": {
+                  "Imagenes": {
                     "type": "string",
                     "format": "binary"
                   },
@@ -216,7 +216,7 @@
                 "PrecioBase": {
                   "style": "form"
                 },
-                "Imagen": {
+                "Imagenes": {
                   "style": "form"
                 },
                 "IdRemate": {
