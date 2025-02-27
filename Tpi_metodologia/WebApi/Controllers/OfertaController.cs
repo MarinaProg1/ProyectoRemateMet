@@ -104,49 +104,6 @@ namespace WebApi.Controllers
         }
 
 
-        [HttpPost("seleccionar-ganadora/{idProducto}")]
-        public async Task<IActionResult> SeleccionarOfertaGanadora(int idProducto)
-        {
-            try
-            {
-                var ofertas = await _context.Ofertas
-                    .Where(o => o.IdProducto == idProducto)
-                    .OrderByDescending(o => o.Monto)
-                    .ThenBy(o => o.Fecha)
-                    .ToListAsync();
-
-                if (ofertas == null || ofertas.Count == 0)
-                    return NotFound("No hay ofertas para este producto.");
-
-                var ofertaGanadora = ofertas.First();
-                ofertaGanadora.Estado = "ganadora";
-
-                // Crear la factura
-                var factura = new Factura
-                {
-                    IdOferta = ofertaGanadora.IdOferta,
-                    Fecha = DateTime.Now,
-                    Monto = ofertaGanadora.Monto
-                };
-
-                _context.Facturas.Add(factura);
-                _context.Ofertas.Update(ofertaGanadora);
-                await _context.SaveChangesAsync();
-
-                // Obtener información del usuario ganador
-                var usuarioGanador = await _context.Usuarios.FindAsync(ofertaGanadora.IdUsuario);
-                if (usuarioGanador != null && !string.IsNullOrEmpty(usuarioGanador.Email))
-                {
-                    _remateService.EnviarCorreoFactura(usuarioGanador.Email, usuarioGanador.Nombre, factura);
-                }
-
-                return Ok(new { mensaje = "Oferta ganadora seleccionada y factura generada", factura });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error interno: {ex.Message}");
-            }
-        }
     }
 }
 

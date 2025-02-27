@@ -15,10 +15,11 @@ namespace WebApi.Controllers;
 public class RematesController : ControllerBase
 {
     private readonly SubastaMetodologiaDbContext _context;
-
-    public RematesController(SubastaMetodologiaDbContext context)
+    private readonly RemateService _remateService;    
+    public RematesController(SubastaMetodologiaDbContext context, RemateService remateService)
     {
         _context = context;
+        _remateService = remateService;
     }
 
     [HttpPost("crear")]
@@ -40,24 +41,16 @@ public class RematesController : ControllerBase
                 Categoria = dto.Categoria,
                 FechaInicio = DateTime.Now.AddDays(4),
                 FechaCierre = DateTime.Now.AddDays(11),
-                Estado = "en_preparacion",
+                Estado = "preparacion",
                 IdUsuario = dto.IdUsuario
             };
 
             _context.Remates.Add(remate);
             await _context.SaveChangesAsync();
 
-            var productos = await _context.Productos
-                .Where(p => p.IdRemate == remate.IdRemate)
-                .ToListAsync();
+            // No se calcula la ganancia aquí porque aún no hay productos
 
-            decimal totalProductos = productos.Sum(p => p.PrecioBase ?? 0);
-            remate.Ganancia = totalProductos * 0.10m;
-
-            _context.Remates.Update(remate);
-            await _context.SaveChangesAsync();
-
-            return Ok(new { mensaje = "Remate creado en estado 'Preparación'", idRemate = remate.IdRemate, ganancia = remate.Ganancia });
+            return Ok(new { mensaje = "Remate creado en estado 'Preparación'", idRemate = remate.IdRemate });
         }
         catch (Exception ex)
         {
@@ -103,10 +96,12 @@ public class RematesController : ControllerBase
 
             foreach (var remate in remates)
             {
-                if (remate.Estado == "en_preparación" && remate.FechaInicio <= ahora)
+                // De 'preparación' a 'abierto'
+                if (remate.Estado == "preparación" && remate.FechaInicio <= ahora && remate.FechaCierre > ahora)
                 {
                     remate.Estado = "abierto";
                 }
+                // De 'abierto' a 'cerrado'
                 else if (remate.Estado == "abierto" && remate.FechaCierre <= ahora)
                 {
                     remate.Estado = "cerrado";
@@ -122,11 +117,13 @@ public class RematesController : ControllerBase
         }
     }
 
+
     [HttpGet("todos")]
     public async Task<IActionResult> ObtenerTodosLosRemates()
     {
         try
         {
+
             var remates = await _context.Remates
                 .Include(r => r.Productos)
                 .ToListAsync();
@@ -150,5 +147,51 @@ public class RematesController : ControllerBase
         await servicio.ProcesarRematesCerrados();
         return Ok("Remates cerrados procesados correctamente.");
     }
+
+    [HttpGet("{idRemate}")]
+    public async Task<IActionResult> ObtenerRematePorId(int idRemate)
+    {
+        try
+        {
+            var remate = await _context.Remates
+                .FirstOrDefaultAsync(r => r.IdRemate == idRemate);
+
+            if (remate == null)
+            {
+                return NotFound($"No se encontró un remate con el ID {idRemate}");
+            }
+
+            return Ok(remate);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+        }
+    }
+
+   
+
+    [HttpPost("calcular-oferta-ganadora/{idProducto}")]
+   
+    public async Task<IActionResult> CalcularOfertaGanadoraPorProducto(int idProducto)
+    {
+        try
+        {
+            var resultado = await _remateService.CalcularOfertaGanadoraPorProducto(idProducto);
+
+            if (resultado == null)
+            {
+                return NotFound("No hay oferta ganadora para este producto.");
+            }
+
+            return Ok(resultado);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+        }
+    }
+
+
 
 }

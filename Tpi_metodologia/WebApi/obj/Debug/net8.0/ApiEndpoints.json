@@ -74,22 +74,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApi.Controllers.OfertaController",
-    "Method": "SeleccionarOfertaGanadora",
-    "RelativePath": "api/Oferta/seleccionar-ganadora/{idProducto}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idProducto",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "WebApi.Controllers.ProductoController",
     "Method": "AprobarProducto",
     "RelativePath": "api/Producto/aprobar/{idProducto}/{idRemate}",
@@ -195,6 +179,22 @@
   },
   {
     "ContainingType": "WebApi.Controllers.RematesController",
+    "Method": "ObtenerRematePorId",
+    "RelativePath": "api/remates/{idRemate}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRemate",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.RematesController",
     "Method": "ObtenerSubastasActivas",
     "RelativePath": "api/remates/activas",
     "HttpMethod": "GET",
@@ -211,6 +211,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.RematesController",
+    "Method": "CalcularOfertaGanadoraPorProducto",
+    "RelativePath": "api/remates/calcular-oferta-ganadora/{idProducto}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

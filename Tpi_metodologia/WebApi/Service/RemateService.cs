@@ -105,4 +105,54 @@ public class RemateService
             Console.WriteLine($"Error al enviar correo: {ex.Message}");
         }
     }
+    public async Task<dynamic> CalcularOfertaGanadoraPorProducto(int idProducto)
+    {
+        // Obtener la oferta más alta para el producto específico
+        var ofertaGanadora = await _context.Ofertas
+            .Where(o => o.IdProducto == idProducto)
+            .OrderByDescending(o => o.Monto)
+            .ThenBy(o => o.Fecha)
+            .FirstOrDefaultAsync();
+
+        if (ofertaGanadora != null)
+        {
+            // Marcar oferta como ganadora
+            ofertaGanadora.Estado = "ganadora";
+
+            // Crear factura para la oferta ganadora
+            var factura = new Factura
+            {
+                IdOferta = ofertaGanadora.IdOferta,
+                Fecha = DateTime.Now,
+                Monto = ofertaGanadora.Monto
+            };
+
+            _context.Facturas.Add(factura);
+            await _context.SaveChangesAsync();
+
+            // Obtener información del usuario ganador
+            var usuario = await _context.Usuarios
+                .Where(u => u.IdUsuario == ofertaGanadora.IdUsuario)
+                .FirstOrDefaultAsync();
+
+            if (usuario != null)
+            {
+                // Notificar al usuario ganador
+                EnviarCorreoFactura(usuario.Email, usuario.Nombre, factura);
+
+                // Retornar el resultado con nombre y monto
+                return new
+                {
+                    NombreUsuario = usuario.Nombre,
+                    MontoOferta = ofertaGanadora.Monto
+                };
+            }
+        }
+
+        // Retornar null si no hay oferta ganadora
+        return null;
+    }
+
+
 }
+

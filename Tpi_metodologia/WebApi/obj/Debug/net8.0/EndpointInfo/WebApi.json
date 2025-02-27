@@ -148,29 +148,6 @@
         }
       }
     },
-    "/api/Oferta/seleccionar-ganadora/{idProducto}": {
-      "post": {
-        "tags": [
-          "Oferta"
-        ],
-        "parameters": [
-          {
-            "name": "idProducto",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Producto/publicar": {
       "post": {
         "tags": [
@@ -401,6 +378,52 @@
       "post": {
         "tags": [
           "Remates"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/remates/{idRemate}": {
+      "get": {
+        "tags": [
+          "Remates"
+        ],
+        "parameters": [
+          {
+            "name": "idRemate",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/remates/calcular-oferta-ganadora/{idProducto}": {
+      "post": {
+        "tags": [
+          "Remates"
+        ],
+        "parameters": [
+          {
+            "name": "idProducto",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
