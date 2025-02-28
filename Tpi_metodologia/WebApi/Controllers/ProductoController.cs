@@ -82,11 +82,13 @@ namespace WebApi.Controllers
                 if (usuario == null) return NotFound("Usuario no encontrado");
 
 
-                var remate = await _context.Remates.FindAsync(dto.IdRemate);
+                //var remate = await _context.Remates.FindAsync(dto.IdRemate);
+                var remate = await _context.Remates.FirstOrDefaultAsync(r => r.IdRemate == dto.IdRemate);
+
 
                 if (remate == null) return NotFound("Remate no encontrado");
 
-                if (remate.Estado != "abierto") return BadRequest("El remate no está activo");
+                if (remate.Estado != "abierto" && remate.Estado != "preparacion") return BadRequest("El remate no está activo");
 
                 // Crear el producto
 
@@ -199,7 +201,7 @@ namespace WebApi.Controllers
                 // Aprobar el producto
                 producto.Estado = "aprobado";
                  // Buscar el remate con el ID especificado y que esté abierto
-                var remate = await _context.Remates.FirstOrDefaultAsync(r => r.IdRemate == idRemate && r.Estado == "abierto");
+                var remate = await _context.Remates.FirstOrDefaultAsync(r => r.IdRemate == idRemate && r.Estado == "abierto" || r.Estado == "preparacion");
                 if (remate == null)
 
                     return BadRequest("El remate especificado no está activo o no existe.");

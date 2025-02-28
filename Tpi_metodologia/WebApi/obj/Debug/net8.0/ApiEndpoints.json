@@ -231,6 +231,16 @@
   },
   {
     "ContainingType": "WebApi.Controllers.RematesController",
+    "Method": "CalcularOfertasGanadoras",
+    "RelativePath": "api/remates/calcular-ofertas-ganadoras",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.RematesController",
     "Method": "CrearRemate",
     "RelativePath": "api/remates/crear",
     "HttpMethod": "POST",

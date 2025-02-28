@@ -431,6 +431,18 @@
           }
         }
       }
+    },
+    "/api/remates/calcular-ofertas-ganadoras": {
+      "post": {
+        "tags": [
+          "Remates"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

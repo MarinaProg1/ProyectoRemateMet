@@ -192,6 +192,26 @@ public class RematesController : ControllerBase
         }
     }
 
+    [HttpPost("calcular-ofertas-ganadoras")]
+    [Authorize(Roles = "admin")]
+    public async Task<IActionResult> CalcularOfertasGanadoras()
+    {
+        try
+        {
+            var resultados = await _remateService.CalcularOfertasGanadoras();
+
+            if (resultados.Count == 0)
+            {
+                return NotFound("No hubo ofertas ganadoras.");
+            }
+
+            return Ok(resultados);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+        }
+    }
 
 
 }
