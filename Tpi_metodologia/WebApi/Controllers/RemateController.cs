@@ -97,9 +97,9 @@ public class RematesController : ControllerBase
             foreach (var remate in remates)
             {
                 // De 'preparación' a 'abierto'
-                if (remate.Estado == "preparación" && remate.FechaInicio <= ahora && remate.FechaCierre > ahora)
+                if (remate.Estado =="preparacion" && remate.FechaInicio <= ahora && remate.FechaCierre > ahora)
                 {
-                    remate.Estado = "abierto";
+                    remate.Estado ="abierto";
                 }
                 // De 'abierto' a 'cerrado'
                 else if (remate.Estado == "abierto" && remate.FechaCierre <= ahora)

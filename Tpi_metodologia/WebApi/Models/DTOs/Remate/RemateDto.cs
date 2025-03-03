@@ -9,7 +9,7 @@
         public DateTime FechaInicio { get; set; }
         public DateTime FechaCierre { get; set; }
         public string Estado { get; set; } = string.Empty;
-        public decimal? Ganancia { get; set; }
+       // public decimal? Ganancia { get; set; }
         public int? IdUsuario { get; set; }
     }
 }

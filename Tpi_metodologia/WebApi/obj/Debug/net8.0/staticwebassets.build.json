@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oESjW5yjhV6NyzzH091eVniErgPN4eA6FsvdUj/oSb0=",
+  "Hash": "P3pPKA4PEz/9qjt/wl0XIWz5i/YJx/BkqwVHeErNQRs=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\2745a7e7-c1ce-4c9e-8bbb-a878c943d510.png"
+    },
+    {
+      "Identity": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\29df1285-8e11-4c6d-b315-eabf7ae81723.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "imagenes/29df1285-8e11-4c6d-b315-eabf7ae81723#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3e8nftj0p",
+      "Integrity": "kWOl1kFtCZT1edGqMXsTOz8BJWNy6C5BId9d/dfy4X0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\29df1285-8e11-4c6d-b315-eabf7ae81723.png"
     },
     {
       "Identity": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\3c27b1f1-3a52-4a43-a6fa-1649620277ec.png",
@@ -120,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\667fb500-36e2-4f5e-ae23-f8eeea9a4800.png"
+    },
+    {
+      "Identity": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\67db7239-19dc-498a-a2f7-42a7ef17b956.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "imagenes/67db7239-19dc-498a-a2f7-42a7ef17b956#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vfb2rokpun",
+      "Integrity": "lX4f4RQhtDHev7B1SahDLeJ3HAV8Y35HGIe+zjbi/QA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\67db7239-19dc-498a-a2f7-42a7ef17b956.png"
     },
     {
       "Identity": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\72d78948-bed5-4bc7-84ba-367dc62814dc.png",
@@ -370,6 +412,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-0wn450rQEgBiZPjdNwxk4RJqjwqHn7kDoX27ly16BvA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/29df1285-8e11-4c6d-b315-eabf7ae81723.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\29df1285-8e11-4c6d-b315-eabf7ae81723.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kWOl1kFtCZT1edGqMXsTOz8BJWNy6C5BId9d/dfy4X0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 19:54:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kWOl1kFtCZT1edGqMXsTOz8BJWNy6C5BId9d/dfy4X0="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/29df1285-8e11-4c6d-b315-eabf7ae81723.z3e8nftj0p.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\29df1285-8e11-4c6d-b315-eabf7ae81723.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kWOl1kFtCZT1edGqMXsTOz8BJWNy6C5BId9d/dfy4X0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 19:54:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3e8nftj0p"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/29df1285-8e11-4c6d-b315-eabf7ae81723.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kWOl1kFtCZT1edGqMXsTOz8BJWNy6C5BId9d/dfy4X0="
         }
       ]
     },
@@ -698,6 +822,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-UuMXMO/9HCE2sA4Frqu6C+AR6+Lv3mkR5JrR5VzDuJo="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/67db7239-19dc-498a-a2f7-42a7ef17b956.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\67db7239-19dc-498a-a2f7-42a7ef17b956.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lX4f4RQhtDHev7B1SahDLeJ3HAV8Y35HGIe+zjbi/QA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 19:45:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lX4f4RQhtDHev7B1SahDLeJ3HAV8Y35HGIe+zjbi/QA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/67db7239-19dc-498a-a2f7-42a7ef17b956.vfb2rokpun.png",
+      "AssetFile": "C:\\Users\\marin\\source\\repos\\UlimoTPI_Metodologia\\Tpi_metodologia\\WebApi\\wwwroot\\imagenes\\67db7239-19dc-498a-a2f7-42a7ef17b956.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lX4f4RQhtDHev7B1SahDLeJ3HAV8Y35HGIe+zjbi/QA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 19:45:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vfb2rokpun"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/67db7239-19dc-498a-a2f7-42a7ef17b956.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lX4f4RQhtDHev7B1SahDLeJ3HAV8Y35HGIe+zjbi/QA="
         }
       ]
     },
