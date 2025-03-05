@@ -70,24 +70,38 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddScoped<RemateService>();
 
-// ✅ Configurar CORS correctamente
+//// ✅ Configurar CORS correctamente
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("NewPolicy", app =>
+//    {
+//        app.WithOrigins()
+//           .AllowAnyMethod()
+//           .AllowAnyHeader();
+//    });
+//});
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("NewPolicy", app =>
-    {
-        app.WithOrigins("http://localhost:5151")
-           .AllowAnyMethod()
-           .AllowAnyHeader();
-    });
+    options.AddPolicy("NewPolicy",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
 });
+
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors("NewPolicy");
 app.UseAuthentication();

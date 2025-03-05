@@ -152,6 +152,72 @@ public class RemateService
         // Retornar null si no hay oferta ganadora
         return null;
     }
+    //public async Task<List<dynamic>> CalcularOfertasGanadoras()
+    //{
+    //    var resultados = new List<dynamic>();
+
+    //    // Obtener remates en estado cerrado
+    //    var rematesCerrados = await _context.Remates
+    //        .Where(r => r.Estado == "cerrado")
+    //        .ToListAsync();
+
+    //    foreach (var remate in rematesCerrados)
+    //    {
+    //        // Obtener productos asociados al remate
+    //        var productos = await _context.Productos
+    //            .Where(p => p.IdRemate == remate.IdRemate)
+    //            .ToListAsync();
+
+    //        foreach (var producto in productos)
+    //        {
+    //            // Obtener la oferta más alta para el producto
+    //            var ofertaGanadora = await _context.Ofertas
+    //                .Where(o => o.IdProducto == producto.IdProducto)
+    //                .OrderByDescending(o => o.Monto)
+    //                .ThenBy(o => o.Fecha)
+    //                .FirstOrDefaultAsync();
+
+    //            if (ofertaGanadora != null)
+    //            {
+    //                // Marcar oferta como ganadora
+    //                ofertaGanadora.Estado = "ganadora";
+
+    //                // Crear factura para la oferta ganadora
+    //                var factura = new Factura
+    //                {
+    //                    IdOferta = ofertaGanadora.IdOferta,
+    //                    Fecha = DateTime.Now,
+    //                    Monto = ofertaGanadora.Monto
+    //                };
+
+    //                _context.Facturas.Add(factura);
+    //                await _context.SaveChangesAsync();
+
+    //                // Obtener información del usuario ganador
+    //                var usuario = await _context.Usuarios
+    //                    .Where(u => u.IdUsuario == ofertaGanadora.IdUsuario)
+    //                    .FirstOrDefaultAsync();
+
+    //                if (usuario != null)
+    //                {
+    //                    // Añadir a la lista de resultados
+    //                    resultados.Add(new
+    //                    {
+    //                        NombreUsuario = usuario.Nombre +""+ usuario.Apellido,
+    //                        MontoOferta = ofertaGanadora.Monto
+    //                    });
+
+    //                    // Notificar al usuario ganador
+    //                    EnviarCorreoFactura(usuario.Email, usuario.Nombre, factura);
+    //                }
+    //            }
+    //        }
+    //    }
+
+    //    await _context.SaveChangesAsync();
+
+    //    return resultados;
+    //}
     public async Task<List<dynamic>> CalcularOfertasGanadoras()
     {
         var resultados = new List<dynamic>();
@@ -200,11 +266,13 @@ public class RemateService
 
                     if (usuario != null)
                     {
-                        // Añadir a la lista de resultados
+                        // Añadir a la lista de resultados con el título del producto
                         resultados.Add(new
                         {
-                            NombreUsuario = usuario.Nombre,
-                            MontoOferta = ofertaGanadora.Monto
+                            TituloProducto = producto.Titulo,  // Agregar el título del producto
+                            NombreUsuario = usuario.Nombre + " " + usuario.Apellido,
+                            MontoOferta = ofertaGanadora.Monto,
+                            FechaOferta = ofertaGanadora.Fecha,
                         });
 
                         // Notificar al usuario ganador
@@ -219,6 +287,11 @@ public class RemateService
         return resultados;
     }
 
+
+    public async Task<List<Remate>> ObtenerRematesCerrados()
+    {
+        return await _context.Remates.Where(r => r.Estado == "cerrado").ToListAsync();
+    }
 
 }
 

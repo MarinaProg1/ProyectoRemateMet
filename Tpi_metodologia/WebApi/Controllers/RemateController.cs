@@ -192,12 +192,20 @@ public class RematesController : ControllerBase
         }
     }
 
+    
     [HttpPost("calcular-ofertas-ganadoras")]
-    [Authorize(Roles = "admin")]
     public async Task<IActionResult> CalcularOfertasGanadoras()
     {
         try
         {
+            // Obtener los remates cerrados
+            var rematesCerrados = await _remateService.ObtenerRematesCerrados();
+
+            if (!rematesCerrados.Any())
+            {
+                return BadRequest("No hay remates cerrados para calcular ofertas ganadoras.");
+            }
+
             var resultados = await _remateService.CalcularOfertasGanadoras();
 
             if (resultados.Count == 0)
